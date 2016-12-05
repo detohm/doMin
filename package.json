@@ -1,0 +1,14 @@
+{
+  "name": "do-min",
+  "version": "1.0.0",
+  "description": "Wordpress theme for minimalism",
+  "author": "Attaphong Rattanaveerachanon (Ohm)",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-less": "^3.1.0",
+    "gulp-util": "^3.0.7",
+    "path": "^0.12.7",
+  }
+}
