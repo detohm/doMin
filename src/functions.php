@@ -28,6 +28,13 @@ if ( ! function_exists( 'do_enqueue_styles_and_scripts' ) ) {
 
 add_action('wp_enqueue_scripts', 'do_enqueue_styles_and_scripts');
 
+//setup menu
+if ( ! function_exists( 'do_register_menu' ) ) {
+    function do_register_menu() {
+        register_nav_menu('main',__( 'main' ));
+    }
+}
+add_action( 'init', 'do_register_menu' );
 
 
 ?>

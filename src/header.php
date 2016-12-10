@@ -15,8 +15,8 @@
 			
 		</div>
 	
-		<nav role="navigation" class="site-navigation main-navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+		<nav role="navigation" class="na">
+			<?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
 		</nav>
 		
 		<div class="clr"></div>
