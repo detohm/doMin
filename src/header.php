@@ -8,4 +8,18 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<div class="do">
+<header id="h" class="h" >
+	<div class="in">
+		
+		<div class="hd">
+			
+		</div>
+	
+		<nav role="navigation" class="site-navigation main-navigation">
+			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+		</nav>
+		
+		<div class="clr"></div>
+	</div>
+		
+</header>
