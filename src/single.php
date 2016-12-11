@@ -7,6 +7,7 @@
 		<h1 class="title"><?php the_title() ?></h1>
 		
 		<div class="the-content">
+			<?php the_post_thumbnail(); ?>
 			<?php the_content(); ?>
 		</div>
 		

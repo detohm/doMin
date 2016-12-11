@@ -13,6 +13,13 @@ remove_action( 'wp_head', 'wp_generator');
 remove_action( 'wp_head', 'rest_output_link_wp_head', 10 );
 //remove_action( 'wp_head', 'wp_oembed_add_discovery_links', 10 );
 
+/**
+ * Add support for the featured images (also known as post thumbnails).
+ */
+if ( function_exists( 'add_theme_support' ) ) { 
+	add_theme_support( 'post-thumbnails' );
+}
+
 
 //initialize based scripts and style
 if ( ! function_exists( 'do_enqueue_styles_and_scripts' ) ) {
