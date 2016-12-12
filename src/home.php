@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <div class="do-home">
+<div class="articles">
 <?php if ( have_posts() ) : ?>
 	<?php while ( have_posts() ) : the_post(); ?>
 		<div class="article">
@@ -19,4 +20,17 @@
 
 <?php endif; ?>
 </div>
+<div class="sidebar">
+	<div class="inner">
+		<div class="title">ABOUT ME</div>
+		<div class="gravatar">
+			<?php 
+				echo get_avatar( get_option('admin_email'), 100 ); 
+			?>
+		</div>
+		<div class="author-detail"><? the_author_meta( 'description' ); ?></div>
+	</div>
+</div>
+</div>
+<div class="clear"></div>
 <?php get_footer(); ?>

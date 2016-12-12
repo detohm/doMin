@@ -1,17 +1,45 @@
 .do-home {
-	
-	padding:36px 0 0 0;
-	//max-width: 720px;  
+	padding: 36px 0 0 0;
+	float: left;
+	width: 100%;
+	background-color: #FAFAFA;
 
+	.articles {
+		width: 66%;
+		//padding: 0 15px 0 72px;
+		//position: relative;
+		float: left;
 
-	.article {
-		a {
-			.post-thumbnail {
-				background-position: center;
-				background-size: 100%;
-				//background-size: contain;
-				background-repeat: no-repeat;
-				height: 400px;
+		.article {
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+			box-sizing: border-box;
+			margin: 0 0 15px 144px;
+			a {
+				.post-thumbnail {
+					background-position: center;
+					background-size: 100%;
+					//background-size: contain;
+					background-repeat: no-repeat;
+					height: 300px;
+				}
+			}
+		}
+	}
+	.sidebar {
+		width: 33%;
+		float: left;
+		.inner{
+			padding: 0 144px 15px 36px;
+			.title {
+				padding: 0 0 15px 0;
+				font-family: @head-font;
+				font-weight: 600;
+			}
+			.gravatar {
+				padding: 0 0 15px 0;
+			}
+			.author-detail {
+				padding: 0 0 15px 0;
 			}
 		}
 	}
