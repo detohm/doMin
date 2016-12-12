@@ -24,6 +24,22 @@ header {
 			li {
 				display: inline;
 				padding: 0 5px 0 5px;
+
+				a {
+					display: inline-block;
+					&:after {
+						content: '';
+						display: block;
+						height: 2px;
+						width: 0;
+						background: transparent;
+						transition: width .3s ease, background-color .3s ease;
+					}
+					&:hover:after {
+						width: 100%;
+						background: #000;
+					}
+				}
 			}
 		}
 	}

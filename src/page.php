@@ -5,7 +5,7 @@
 	
 		<h1 class="title"><?php the_title() ?></h1>
 		
-		<div class="the-content">
+		<div class="content">
 			<?php the_content(); ?>
 		</div>
 		
