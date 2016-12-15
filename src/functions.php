@@ -18,7 +18,13 @@ remove_action( 'wp_head', 'rest_output_link_wp_head', 10 );
  */
 if ( function_exists( 'add_theme_support' ) ) { 
 	add_theme_support( 'post-thumbnails' );
+
+	
 }
+function theme_prefix_setup() {
+    add_theme_support( 'custom-logo');
+}
+add_action( 'after_setup_theme', 'theme_prefix_setup' );
 
 
 //initialize based scripts and style

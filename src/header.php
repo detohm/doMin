@@ -12,7 +12,7 @@
 	<div class="container">
 		
 		<div class="head">
-			<h1 class="title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" ><?php bloginfo( 'name' ); ?></a></h1>
+			<h1 class="title"><?php the_custom_logo(); ?></h1>
 			<h3 class="tag-line"><?php echo get_bloginfo( 'description' ); ?></h3>
 		</div>
 	

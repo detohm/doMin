@@ -14,11 +14,15 @@ gulp.task('build-php',function(){
 	return gulp.src('./src/**/*.php').pipe(gulp.dest('./build'));
 });
 
+gulp.task('build-img',function(){
+	return gulp.src('./src/img/**/*.*').pipe(gulp.dest('./build/img'));
+});
+
 gulp.task('build-main-style',function(){
 	return gulp.src('./src/style.css').pipe(gulp.dest('./build'));
 });
 
-gulp.task('build',['build-php','build-main-style','build-less','build-js']);
+gulp.task('build',['build-php','build-main-style','build-less','build-js','build-img']);
 
 gulp.task('watch',function(){
 	return gulp.watch(['./src/**/*.*'],['build']);
