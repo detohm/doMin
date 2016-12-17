@@ -7,7 +7,9 @@
 			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 				<div class="post-thumbnail"><?php the_post_thumbnail(); ?></div>
 				<div class="title"><? the_title(); ?></div>
+				<div class="content"><? the_content('', true); ?></div>
 			</a>
+
 		</div>
 
 	<?php endwhile; ?>
@@ -29,7 +31,9 @@
 				echo get_avatar( get_option('admin_email'), 100 ); 
 			?>
 		</div>
-		<div class="author-detail"><? the_author_meta( 'description' ); ?></div>
+		<div class="author-name"><?=AUTHOR_NAME ?></div>
+		<div class="author-sub-name"><?=AUTHOR_SUB_NAME ?></div>
+		<div class="author-detail"><?=AUTHOR_DETAIL ?></div>
 		<div class="social-icons">
 			<a href="https://github.com/detohm" target="_blank" ><img src="<?=THEME_URI."/img/social-icons/github.svg"; ?>" /></a>
 			<a href="https://www.instagram.com/detohm" target="_blank" ><img src="<?=THEME_URI."/img/social-icons/instagram.svg"; ?>" /></a>

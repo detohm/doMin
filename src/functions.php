@@ -3,6 +3,11 @@
 define ("THEME_URI", get_template_directory_uri());
 define ("DOMIN_VERSION", "1.0.0");
 
+//configuration
+define ("AUTHOR_NAME", "Attaphong Rattanaveerachanon");
+define ("AUTHOR_SUB_NAME", "(Ohm Attaphong)");
+define ("AUTHOR_DETAIL", "CTO at FINNOMENA<br />Music Maker<br />Code Enthusiast");
+
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
