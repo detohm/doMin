@@ -22,7 +22,7 @@
 </div>
 <div class="sidebar">
 	<div class="inner">
-		<div class="title">ABOUT ME</div>
+		<div class="title">About Me</div>
 		<div class="gravatar">
 			<?php 
 				echo get_avatar( get_option('admin_email'), 100 ); 
