@@ -17,5 +17,10 @@
 
 <?php endwhile; ?>
 <?php else: endif; ?>
+
+	<div class="about-me">
+		<?php get_template_part( 'templates/about-me'); ?>
+	</div>
+
 </div>
 <?php get_footer(); ?>
