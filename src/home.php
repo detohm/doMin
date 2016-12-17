@@ -5,7 +5,8 @@
 	<?php while ( have_posts() ) : the_post(); ?>
 		<div class="article">
 			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-				<div class="post-thumbnail" style="background-image:url(<?php the_post_thumbnail_url(); ?>)"></div>
+				<div class="post-thumbnail"><?php the_post_thumbnail(); ?></div>
+				<div class="title"><? the_title(); ?></div>
 			</a>
 		</div>
 
