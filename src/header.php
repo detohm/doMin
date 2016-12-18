@@ -8,8 +8,9 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<img src="<?=THEME_URI."/img/black-ribbon.png"; ?>" class="black-ribbon"/>
+
 <header>
+	<img class="black-ribbon" src="<?=THEME_URI."/img/black-ribbon.png"; ?>" />
 	<div class="container">
 		
 		<div class="head">

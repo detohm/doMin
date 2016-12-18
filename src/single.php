@@ -10,11 +10,15 @@
 		<h1 class="title"><?php the_title() ?></h1>
 		
 		<div class="content">
-			
 			<?php the_content(); ?>
 		</div>
+		<? if ( comments_open() || '0' != get_comments_number() ) : ?>
+			<div class="post-comments"><?php comments_template( '', true ); ?></div>
+	    <?php else: endif; ?>
 		
 	</article>
+	
+	
 
 <?php endwhile; ?>
 <?php else: endif; ?>
