@@ -7,7 +7,7 @@
 
 	.post-thumbnail {
 		max-width: 1024px;
-		//padding: 0 1px 0 1px;
+		padding: 0 0 2em 0;
 		margin: auto;
 	    
 		//box-shadow: 1px 1px 4px #CCC;
@@ -26,7 +26,7 @@
 
 		max-width: 720px;
 		margin: 0 auto;
-		padding: 2em;
+		padding: 0 2em 2em 2em;
 		//background-color: #FFF;
 		//box-shadow: 1px 1px 4px #CCC;
 		//box-sizing: border-box;
@@ -108,14 +108,20 @@
 	}
 
 	@media screen and (min-width: 320px) {
+		.post-thumbnail {
+			padding: 0 0 1.5em 0;
+		}
 		article {
-			padding: 1.5em;
+			padding: 0 1.5em 1.5em 1.5em;
 		}
 	}
 
 	@media screen and (min-width: 768px) {
+		.post-thumbnail {
+			padding: 0 0 2em 0;
+		}
 		article {
-			padding: 2em;
+			padding: 0 2em 2em 2em;
 		}
 	}
 
