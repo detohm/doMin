@@ -8,6 +8,7 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<img src="<?=THEME_URI."/img/black-ribbon.png"; ?>" class="black-ribbon"/>
 <header>
 	<div class="container">
 		
