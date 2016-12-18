@@ -1,16 +1,35 @@
 .do-post, .do-page {
 
-	background-color: #FAFAFA;
+	//background-color: #FAFAFA;
 	min-height: 360px;
-	padding: 1em 0;
+	padding: 0;
+	//padding-top: 36px;
+
+	.post-thumbnail {
+		max-width: 1024px;
+		//padding: 0 1px 0 1px;
+		margin: auto;
+	    
+		//box-shadow: 1px 1px 4px #CCC;
+		//box-sizing: border-box;
+		
+		line-height: 0;
+	    
+	    img {
+			max-width: 100%;
+			height: auto;
+			margin: 0;
+		}
+	}
     
 	article {
 
 		max-width: 720px;
 		margin: 0 auto;
 		padding: 2em;
-		background-color: #FFF;
-		box-shadow: 1px 1px 4px #CCC;
+		//background-color: #FFF;
+		//box-shadow: 1px 1px 4px #CCC;
+		//box-sizing: border-box;
 
 		p {
 			margin: 0 0 1em 0;
@@ -46,8 +65,9 @@
 
 	.about-me {
 
-		padding: 20px 0 0 0;
+		padding: 36px 0 0 0;
 		text-align: center;
+		background-color: @background-color-secondary;
 		.title {
 			padding: 0 0 15px 0;
 			font-family: @head-font;

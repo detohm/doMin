@@ -2,9 +2,10 @@
 <div class="do-post">
 <?php if ( have_posts() ) : ?>
 <?php while ( have_posts() ) : the_post(); ?>
+	<div class="post-thumbnail"><?php the_post_thumbnail(); ?></div>
 	<article class="post">
 
-		<?php the_post_thumbnail(); ?>
+		
 	
 		<h1 class="title"><?php the_title() ?></h1>
 		
