@@ -30,6 +30,21 @@
 		//background-color: #FFF;
 		//box-shadow: 1px 1px 4px #CCC;
 		//box-sizing: border-box;
+		a {
+			display: inline-block;
+			&:after {
+				content: '';
+				display: block;
+				height: 2px;
+				width: 0;
+				background: transparent;
+				transition: width .3s ease, background-color .3s ease;
+			}
+			&:hover:after {
+				width: 100%;
+				background: #000;
+			}
+		}
 
 		p {
 			margin: 0 0 1em 0;
@@ -48,6 +63,12 @@
 			max-width: 100%;
 			height: auto;
 			margin: 0 0 1em;
+
+			&.aligncenter {
+				display: block; 
+				margin: 1em auto; 
+				
+			}
 
 		}
 
