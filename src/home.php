@@ -5,9 +5,9 @@
 	<?php while ( have_posts() ) : the_post(); ?>
 		<div class="article">
 			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-				<div class="post-thumbnail" style="background-image: url(<?=the_post_thumbnail_url(); ?>);"><?php //the_post_thumbnail(); ?></div>
-				<div class="title"><? the_title(); ?></div>
-				<div class="content"><? the_content('', true); ?></div>
+				<div class="post-thumbnail" style="background-image: url(<?php the_post_thumbnail_url(); ?>);"><?php //the_post_thumbnail(); ?></div>
+				<div class="title"><?php the_title(); ?></div>
+				<div class="content"><?php the_content('', true); ?></div>
 			</a>
 
 		</div>

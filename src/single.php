@@ -12,7 +12,7 @@
 		<div class="content">
 			<?php the_content(); ?>
 		</div>
-		<? if ( comments_open() || '0' != get_comments_number() ) : ?>
+		<?php if ( comments_open() || '0' != get_comments_number() ) : ?>
 			<div class="post-comments"><?php comments_template( '', true ); ?></div>
 	    <?php else: endif; ?>
 		
