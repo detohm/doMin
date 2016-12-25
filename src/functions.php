@@ -28,6 +28,7 @@ if ( function_exists( 'add_theme_support' ) ) {
 }
 function theme_prefix_setup() {
     add_theme_support( 'custom-logo');
+    add_theme_support( 'title-tag' );
 }
 add_action( 'after_setup_theme', 'theme_prefix_setup' );
 
